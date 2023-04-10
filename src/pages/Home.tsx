@@ -1,12 +1,5 @@
-import { Link } from 'react-router-dom';
-
-function NotFound() {
-  return (
-    <>
-      <h1>Not Found</h1>
-      <Link to="/">GO HOME</Link>
-    </>
-  );
+function Home() {
+  return <h1>Hello World</h1>;
 }
 
-export default NotFound;
+export default Home;

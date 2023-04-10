@@ -1,0 +1,99 @@
+@use "sass:map";
+
+  body {
+    font-family: $font-family-base;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 1.2rem !important;
+  }
+
+  h1 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 28px !important;
+    line-height: 2rem !important;
+    margin: 16px;
+    @include lg() {
+      font-size: 38px !important;
+    }
+  }
+
+  h2 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 34px !important;
+    line-height: 1.8rem !important;
+    margin: 14px;
+  }
+
+  h3 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 30px !important;
+    line-height: 1.2rem !important;
+    margin: 12px;
+  }
+
+  h4 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 28px !important;
+    line-height: 1.2rem !important;
+    margin: 10px;
+  }
+
+  h5 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 26px !important;
+    line-height: 1.2rem !important;
+    margin: 8px;
+  }
+  h6 {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 22px !important;
+    line-height: 1.2rem !important;
+    margin: 8px;
+  }
+
+  p {
+    font-family: 'Barlow-Regular', sans-serif;
+    font-size: 16px !important;
+    line-height: 1.2rem !important;
+    margin: 8px;
+  }
+
+  strong {
+    font-weight: 700 !important;
+  }
+
+  #header {
+    position: fixed;
+    height: 90px;
+    color: map.get($theme-colors, "white");
+    background-color: map.get($theme-colors, "primary-md");
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    nav {
+      a {
+        padding: 10px;
+        color: map.get($theme-colors, "white");
+      }
+    }
+  }
+
+  #main {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer {
+    position: absolute;
+    min-height: 70px;
+    color: map.get($theme-colors, "white");
+    background-color: map.get($theme-colors, "primary-md");
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0px;
+  }
